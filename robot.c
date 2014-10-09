@@ -25,14 +25,17 @@ void robPrintMessage(int num)
 {
   int i = 0;
 
-  printf("Will Bryan ");
+  //<<<<<<< HEAD
+  printf("Will Bryan and Garret Becker ");
+  //=======
+  //>>>>>>> 920372821d5d3562d53733b02c1d65555ae6730c
 
   for(i; i < num; i++)
     {
       printf("really ");
     }
 
-  printf("loves robots!\n");
+  printf("love robots!\n");
 
   return;
 }
