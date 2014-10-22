@@ -8,6 +8,7 @@
  * @since August 2013
  *
  */
+#include "beckerg17.h"
 #include "robot.h"
 
 /**
@@ -33,6 +34,6 @@ int main(int argc, const char * argv[])
   robPrintAscii();
 
   robPrintMessage(num);
-
+  beckerg17();
   return 0;
 }
