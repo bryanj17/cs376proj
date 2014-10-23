@@ -8,8 +8,10 @@
  * @since August 2013
  *
  */
-#include "beckerg17.h"
+
 #include "robot.h"
+#include "beckerg17.h"
+#include "bryanj17.h"
 
 /**
  * main()
@@ -34,6 +36,10 @@ int main(int argc, const char * argv[])
   robPrintAscii();
 
   robPrintMessage(num);
+
   beckerg17();
+
+  bryanj17();
+
   return 0;
 }
