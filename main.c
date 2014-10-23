@@ -32,14 +32,16 @@ int main(int argc, const char * argv[])
 
   // Convert the command-line argument to a number.
   int num = atoi(argv[1]);
-
+if(argc==0){
   robPrintAscii();
-
+}
+else if(argc>0){
+  robPrintAscii();
   robPrintMessage(num);
 
   beckerg17();
 
-  bryanj17();
-
+ bryanj17();
+}
   return 0;
 }
