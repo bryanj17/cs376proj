@@ -1,4 +1,4 @@
-/**
+/*
  * robot.c
  *
  * A file that contains the supporting functions for main() in the
@@ -27,36 +27,50 @@
  */
 void robPrintMessage(int num)
 {
-  int i = 0;
+  
 
   //<<<<<<< HEAD
   printf("Will Bryan and Garret Becker ");
   //=======
   //>>>>>>> 920372821d5d3562d53733b02c1d65555ae6730c
-
+int i=0;
   for(i; i < num; i++)
-    {
+    
+ {
       printf("really ");
     }
 
   printf("love robots!\n");
 
-  return;
+  
 }
 
 /**
  * robPrintAscii
  *
  */
+
 void robPrintAscii(void)
 {
-  printf("    i_i    \n"
-
-	 "   [b_b]   \n"
-
-	 "   [^_^]   \n"
-
-	 "  /|___|\\  \n"
-         "   d   b   "); 
+int k=0;  
+  for(k = 0; k < 3; k++) {
+	addspace(k);
+    printf("    i_i    \n");
+	 addspace(k);
+    printf("   [b_b]   \n");
+	 addspace(k);
+    printf("   [^_^]   \n");
+	 addspace(k);
+    printf("  /|___|\\  \n");
+	 addspace(k);
+    printf("   d   b   \n");
+  } 
 
 }
+  void addspace(int i) {
+
+    int j;
+    for(j=0; j < i; j++) {
+      printf("       ");
+    }
+  }
