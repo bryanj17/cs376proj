@@ -25,17 +25,17 @@
 int main(int argc, const char * argv[])
 {
   // Check the command line arguments.
-  if(argc != 2) {
+  if(argc > 2) {
     printf("usage: %s <number> \n", argv[0]);
     return -1;
   }
 
   // Convert the command-line argument to a number.
   int num = atoi(argv[1]);
-if(argc==0){
+if(argc==1){
   robPrintAscii();
 }
-else if(argc>0){
+else if(argc>1){
   robPrintAscii();
   robPrintMessage(num);
 
